@@ -1,7 +1,11 @@
 # Project Specific
 
+dictionary/
+datapacks/
+
 stats/
 stats.*
+en_us.json
 
 # IDE
 
