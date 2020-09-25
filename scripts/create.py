@@ -43,8 +43,8 @@ def main():
 	broken = make(data.items, "b", "minecraft.broken", "%s Broken")
 	dropped = make(data.items, "d", "minecraft.dropped", "%s Dropped")
 	picked_up = make(data.items, "p", "minecraft.picked_up", "%s Picked up")
-	killed = make(data.mobs, "k", "minecraft.killed", "%s Killed")
-	killed_by = make(data.mobs, "kb", "minecraft.killed_by", "Killed by %s")
+	killed = make(data.entities_name, "k", "minecraft.killed", "%s Killed")
+	killed_by = make(data.entities_name, "kb", "minecraft.killed_by", "Killed by %s")
 	custom = make(custom_stats, "z", "minecraft.custom", "%s")
 
 	# Creates the required folders

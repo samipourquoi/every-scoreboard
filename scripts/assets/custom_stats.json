@@ -286,5 +286,13 @@
     "71": {
         "name": "use_cauldron",
         "displayName": "Water Taken from Cauldron"
+    },
+	"72": {
+        "name": "interact_with_anvil",
+        "displayName": "Interactions with Anvils"
+    },
+	"73": {
+        "name": "interact_with_grindstone",
+        "displayName": "Interactions with Grindstone"
     }
 }
