@@ -1,74 +1,290 @@
 {
-	"0":  {"name": "animals_bred", "displayName": "Animals Bred" },
-	"1":  {"name": "clean_armor", "displayName": "Armor Pieces Cleaned" },
-	"2":  {"name": "clean_banner", "displayName": "Banners Cleaned" },
-	"3":  {"name": "open_barrel", "displayName": "Barrels Opened" },
-	"4":  {"name": "bell_ring", "displayName": "Bells Rung" },
-	"5":  {"name": "eat_cake_slice", "displayName": "Cake Slices Eaten" },
-	"6":  {"name": "fill_cauldron", "displayName": "Cauldrons Filled" },
-	"7":  {"name": "open_chest", "displayName": "Chests Opened" },
-	"8":  {"name": "damage_absorbed", "displayName": "Damage Absorbed" },
-	"9":  {"name": "damage_blocked_by_shield", "displayName": "Damage Blocked by Shield" },
-	"10": {"name": "damage_dealt", "displayName": "Damage Dealt" },
-	"11": {"name": "damage_dealt_absorbed", "displayName": "Damage Dealt (Absorbed)" },
-	"12": {"name": "damage_dealt_resisted", "displayName": "Damage Dealt (Resisted)" },
-	"13": {"name": "damage_resisted", "displayName": "Damage Resisted" },
-	"14": {"name": "damage_taken", "displayName": "Damage Taken" },
-	"15": {"name": "inspect_dispenser", "displayName": "Dispensers Searched" },
-	"16": {"name": "boat_one_cm", "displayName": "Distance by Boat" },
-	"17": {"name": "aviate_one_cm", "displayName": "Distance by Elytra" },
-	"18": {"name": "horse_one_cm", "displayName": "Distance by Horse" },
-	"19": {"name": "minecart_one_cm", "displayName": "Distance by Minecart" },
-	"20": {"name": "pig_one_cm", "displayName": "Distance by Pig" },
-	"21": {"name": "strider_one_cm", "displayName": "Distance by Strider" },
-	"22": {"name": "climb_one_cm", "displayName": "Distance Climbed" },
-	"23": {"name": "crouch_one_cm", "displayName": "Distance Crouched" },
-	"24": {"name": "fall_one_cm", "displayName": "Distance Fallen" },
-	"25": {"name": "fly_one_cm", "displayName": "Distance Flown" },
-	"26": {"name": "sprint_one_cm", "displayName": "Distance Sprinted" },
-	"27": {"name": "swim_one_cm", "displayName": "Distance Swum" },
-	"28": {"name": "walk_one_cm", "displayName": "Distance Walked" },
-	"29": {"name": "walk_on_water_one_cm", "displayName": "Distance Walked on Water" },
-	"30": {"name": "walk_under_water_one_cm", "displayName": "Distance Walked under Water" },
-	"31": {"name": "inspect_dropper", "displayName": "Droppers Searched" },
-	"32": {"name": "open_enderchest", "displayName": "Ender Chests Opened" },
-	"33": {"name": "fish_caught", "displayName": "Fish Caught" },
-	"34": {"name": "leave_game", "displayName": "Games Quit" },
-	"35": {"name": "inspect_hopper", "displayName": "Hoppers Searched" },
-	"36": {"name": "interact_with_beacon", "displayName": "Interactions with Beacon" },
-	"37": {"name": "interact_with_blast_furnace", "displayName": "Interactions with Blast Furnace" },
-	"38": {"name": "interact_with_brewingstand", "displayName": "Interactions with Brewing Stand" },
-	"39": {"name": "interact_with_campfire", "displayName": "Interactions with Campfire" },
-	"40": {"name": "interact_with_cartography_table", "displayName": "Interactions with Cartography Table" },
-	"41": {"name": "interact_with_crafting_table", "displayName": "Interactions with Crafting Table" },
-	"42": {"name": "interact_with_furnace", "displayName": "Interactions with Furnace" },
-	"43": {"name": "interact_with_lectern", "displayName": "Interactions with Lectern" },
-	"44": {"name": "interact_with_loom", "displayName": "Interactions with Loom" },
-	"45": {"name": "interact_with_smithing_table", "displayName": "Interactions with Smithing Table" },
-	"46": {"name": "interact_with_smoker", "displayName": "Interactions with Smoker" },
-	"47": {"name": "interact_with_stonecutter", "displayName": "Interactions with Stonecutter" },
-	"48": {"name": "drop", "displayName": "Items Dropped" },
-	"49": {"name": "enchant_item", "displayName": "Enchanted Items" },
-	"50": {"name": "jump", "displayName": "Jumps" },
-	"51": {"name": "mob_kills", "displayName": "Mob Kills" },
-	"52": {"name": "play_record", "displayName": "Music Discs Played" },
-	"53": {"name": "play_noteblock", "displayName": "Note Blocks Played" },
-	"54": {"name": "tune_noteblock", "displayName": "Note Blocks Tuned" },
-	"55": {"name": "deaths", "displayName": "Number of Deaths" },
-	"56": {"name": "pot_flower", "displayName": "Plants Potted" },
-	"57": {"name": "player_kills", "displayName": "Player Kills" },
-	"58": {"name": "raid_trigger", "displayName": "Raids Triggered" },
-	"59": {"name": "raid_win", "displayName": "Raids Won" },
-	"60": {"name": "clean_shulker_box", "displayName": "Shulker Boxes Cleaned" },
-	"61": {"name": "open_shulker_box", "displayName": "Shulker Boxes Opened" },
-	"62": {"name": "time_since_death", "displayName": "Since Last Death" },
-	"63": {"name": "time_since_rest", "displayName": "Since Last Rest" },
-	"64": {"name": "sneak_time", "displayName": "Sneak Time" },
-	"65": {"name": "talked_to_villager", "displayName": "Talked to Villagers" },
-	"66": {"name": "target_hit", "displayName": "Targets Hit" },
-	"67": {"name": "play_one_minute", "displayName": "Time Played" },
-	"68": {"name": "sleep_in_bed", "displayName": "Times Slept in a Bed" },
-	"69": {"name": "traded_with_villager", "displayName": "Traded with Villagers" },
-	"70": {"name": "trigger_trapped_chest", "displayName": "Trapped Chests Triggered" },
-	"71": {"name": "use_cauldron", "displayName": "Water Taken from Cauldron" }
+    "0": {
+        "name": "animals_bred",
+        "displayName": "Animals Bred"
+    },
+    "1": {
+        "name": "clean_armor",
+        "displayName": "Armor Pieces Cleaned"
+    },
+    "2": {
+        "name": "clean_banner",
+        "displayName": "Banners Cleaned"
+    },
+    "3": {
+        "name": "open_barrel",
+        "displayName": "Barrels Opened"
+    },
+    "4": {
+        "name": "bell_ring",
+        "displayName": "Bells Rung"
+    },
+    "5": {
+        "name": "eat_cake_slice",
+        "displayName": "Cake Slices Eaten"
+    },
+    "6": {
+        "name": "fill_cauldron",
+        "displayName": "Cauldrons Filled"
+    },
+    "7": {
+        "name": "open_chest",
+        "displayName": "Chests Opened"
+    },
+    "8": {
+        "name": "damage_absorbed",
+        "displayName": "Damage Absorbed"
+    },
+    "9": {
+        "name": "damage_blocked_by_shield",
+        "displayName": "Damage Blocked by Shield"
+    },
+    "10": {
+        "name": "damage_dealt",
+        "displayName": "Damage Dealt"
+    },
+    "11": {
+        "name": "damage_dealt_absorbed",
+        "displayName": "Damage Dealt (Absorbed)"
+    },
+    "12": {
+        "name": "damage_dealt_resisted",
+        "displayName": "Damage Dealt (Resisted)"
+    },
+    "13": {
+        "name": "damage_resisted",
+        "displayName": "Damage Resisted"
+    },
+    "14": {
+        "name": "damage_taken",
+        "displayName": "Damage Taken"
+    },
+    "15": {
+        "name": "inspect_dispenser",
+        "displayName": "Dispensers Searched"
+    },
+    "16": {
+        "name": "boat_one_cm",
+        "displayName": "Distance by Boat"
+    },
+    "17": {
+        "name": "aviate_one_cm",
+        "displayName": "Distance by Elytra"
+    },
+    "18": {
+        "name": "horse_one_cm",
+        "displayName": "Distance by Horse"
+    },
+    "19": {
+        "name": "minecart_one_cm",
+        "displayName": "Distance by Minecart"
+    },
+    "20": {
+        "name": "pig_one_cm",
+        "displayName": "Distance by Pig"
+    },
+    "21": {
+        "name": "strider_one_cm",
+        "displayName": "Distance by Strider"
+    },
+    "22": {
+        "name": "climb_one_cm",
+        "displayName": "Distance Climbed"
+    },
+    "23": {
+        "name": "crouch_one_cm",
+        "displayName": "Distance Crouched"
+    },
+    "24": {
+        "name": "fall_one_cm",
+        "displayName": "Distance Fallen"
+    },
+    "25": {
+        "name": "fly_one_cm",
+        "displayName": "Distance Flown"
+    },
+    "26": {
+        "name": "sprint_one_cm",
+        "displayName": "Distance Sprinted"
+    },
+    "27": {
+        "name": "swim_one_cm",
+        "displayName": "Distance Swum"
+    },
+    "28": {
+        "name": "walk_one_cm",
+        "displayName": "Distance Walked"
+    },
+    "29": {
+        "name": "walk_on_water_one_cm",
+        "displayName": "Distance Walked on Water"
+    },
+    "30": {
+        "name": "walk_under_water_one_cm",
+        "displayName": "Distance Walked under Water"
+    },
+    "31": {
+        "name": "inspect_dropper",
+        "displayName": "Droppers Searched"
+    },
+    "32": {
+        "name": "open_enderchest",
+        "displayName": "Ender Chests Opened"
+    },
+    "33": {
+        "name": "fish_caught",
+        "displayName": "Fish Caught"
+    },
+    "34": {
+        "name": "leave_game",
+        "displayName": "Games Quit"
+    },
+    "35": {
+        "name": "inspect_hopper",
+        "displayName": "Hoppers Searched"
+    },
+    "36": {
+        "name": "interact_with_beacon",
+        "displayName": "Interactions with Beacon"
+    },
+    "37": {
+        "name": "interact_with_blast_furnace",
+        "displayName": "Interactions with Blast Furnace"
+    },
+    "38": {
+        "name": "interact_with_brewingstand",
+        "displayName": "Interactions with Brewing Stand"
+    },
+    "39": {
+        "name": "interact_with_campfire",
+        "displayName": "Interactions with Campfire"
+    },
+    "40": {
+        "name": "interact_with_cartography_table",
+        "displayName": "Interactions with Cartography Table"
+    },
+    "41": {
+        "name": "interact_with_crafting_table",
+        "displayName": "Interactions with Crafting Table"
+    },
+    "42": {
+        "name": "interact_with_furnace",
+        "displayName": "Interactions with Furnace"
+    },
+    "43": {
+        "name": "interact_with_lectern",
+        "displayName": "Interactions with Lectern"
+    },
+    "44": {
+        "name": "interact_with_loom",
+        "displayName": "Interactions with Loom"
+    },
+    "45": {
+        "name": "interact_with_smithing_table",
+        "displayName": "Interactions with Smithing Table"
+    },
+    "46": {
+        "name": "interact_with_smoker",
+        "displayName": "Interactions with Smoker"
+    },
+    "47": {
+        "name": "interact_with_stonecutter",
+        "displayName": "Interactions with Stonecutter"
+    },
+    "48": {
+        "name": "drop",
+        "displayName": "Items Dropped"
+    },
+    "49": {
+        "name": "enchant_item",
+        "displayName": "Enchanted Items"
+    },
+    "50": {
+        "name": "jump",
+        "displayName": "Jumps"
+    },
+    "51": {
+        "name": "mob_kills",
+        "displayName": "Mob Kills"
+    },
+    "52": {
+        "name": "play_record",
+        "displayName": "Music Discs Played"
+    },
+    "53": {
+        "name": "play_noteblock",
+        "displayName": "Note Blocks Played"
+    },
+    "54": {
+        "name": "tune_noteblock",
+        "displayName": "Note Blocks Tuned"
+    },
+    "55": {
+        "name": "deaths",
+        "displayName": "Number of Deaths"
+    },
+    "56": {
+        "name": "pot_flower",
+        "displayName": "Plants Potted"
+    },
+    "57": {
+        "name": "player_kills",
+        "displayName": "Player Kills"
+    },
+    "58": {
+        "name": "raid_trigger",
+        "displayName": "Raids Triggered"
+    },
+    "59": {
+        "name": "raid_win",
+        "displayName": "Raids Won"
+    },
+    "60": {
+        "name": "clean_shulker_box",
+        "displayName": "Shulker Boxes Cleaned"
+    },
+    "61": {
+        "name": "open_shulker_box",
+        "displayName": "Shulker Boxes Opened"
+    },
+    "62": {
+        "name": "time_since_death",
+        "displayName": "Since Last Death"
+    },
+    "63": {
+        "name": "time_since_rest",
+        "displayName": "Since Last Rest"
+    },
+    "64": {
+        "name": "sneak_time",
+        "displayName": "Sneak Time"
+    },
+    "65": {
+        "name": "talked_to_villager",
+        "displayName": "Talked to Villagers"
+    },
+    "66": {
+        "name": "target_hit",
+        "displayName": "Targets Hit"
+    },
+    "67": {
+        "name": "play_one_minute",
+        "displayName": "Time Played"
+    },
+    "68": {
+        "name": "sleep_in_bed",
+        "displayName": "Times Slept in a Bed"
+    },
+    "69": {
+        "name": "traded_with_villager",
+        "displayName": "Traded with Villagers"
+    },
+    "70": {
+        "name": "trigger_trapped_chest",
+        "displayName": "Trapped Chests Triggered"
+    },
+    "71": {
+        "name": "use_cauldron",
+        "displayName": "Water Taken from Cauldron"
+    }
 }
