@@ -69,6 +69,6 @@
 	"67": {"name": "play_one_minute", "displayName": "Time Played" },
 	"68": {"name": "sleep_in_bed", "displayName": "Times Slept in a Bed" },
 	"69": {"name": "traded_with_villager", "displayName": "Traded with Villagers" },
-	"70": {"name": "trigger_trapped_chests", "displayName": "Trapped Chests Triggered" },
+	"70": {"name": "trigger_trapped_chest", "displayName": "Trapped Chests Triggered" },
 	"71": {"name": "use_cauldron", "displayName": "Water Taken from Cauldron" }
 }
