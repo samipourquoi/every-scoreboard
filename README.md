@@ -1,6 +1,6 @@
 # Every Scoreboard
 
-A tool to create datapacks which will include all the scoreboard objectives available in Minecraft. 
+A tool to generate all the scoreboard objectives available in Minecraft. 
 All of them, for ~~any~~ most versions.
 
 # How to use
