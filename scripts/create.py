@@ -58,7 +58,7 @@ def main():
 	pack_mcmeta.close()
 
 	# Creates the json file
-	dictionary = open("./dictionaries/dictionnary-" + minecraft_version + ".json", "w+")
+	dictionary = open("./dictionaries/dictionary-" + minecraft_version + ".json", "w+")
 	dictionary.write(json.dumps({**mined["dictionary"], **used["dictionary"], **crafted["dictionary"],
 	                             **broken["dictionary"], **dropped["dictionary"], **picked_up["dictionary"],
 	                             **killed["dictionary"], **killed_by["dictionary"], **custom["dictionary"]}))
