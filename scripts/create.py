@@ -21,13 +21,15 @@ import os
 # Arguments
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument("-mc", "--mcversion", help="set the Minecraft version the scoreboards will be for")
-parser.add_argument("-c", "--custom", help="add the 'custom' objectives, from the latest version of the game", action="store_true")
+parser.add_argument("-c", "--custom", help="add the 'custom' objectives, from the latest version of the game",
+                    action="store_true")
 args = parser.parse_args()
 
 
 def main():
     if args.custom:
-        print("\033[91mWARNING! The --custom flag is made for the %s version(s).\nIt will not work without modifying the generated mcfunction files!\033[0m" % custom_version)
+        print(
+            "\033[91mWARNING! The --custom flag is made for the %s version(s).\nIt will not work without modifying the generated mcfunction files!\033[0m" % custom_version)
 
     minecraft_version = args.mcversion
     # noinspection PyCallingNonCallable
@@ -47,7 +49,8 @@ def main():
 
     # Creates the required folders
     os.makedirs("./dictionary/", exist_ok=True)
-    os.makedirs("./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/", exist_ok=True)
+    os.makedirs("./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/",
+                exist_ok=True)
 
     # Creates the pack.mcmeta file
     pack_mcmeta = open("./datapacks/every-scoreboard-" + minecraft_version + "/pack.mcmeta", "w+")
@@ -56,12 +59,19 @@ def main():
 
     # Creates the json file
     dictionary = open("./dictionary/dictionnary-" + minecraft_version + ".json", "w+")
-    dictionary.write(json.dumps(mined["dictionary"]))
+    dictionary.write(json.dumps({**mined["dictionary"], **used["dictionary"], **crafted["dictionary"],
+                                 **broken["dictionary"], **dropped["dictionary"], **picked_up["dictionary"],
+                                 **killed["dictionary"], **killed_by["dictionary"], **custom["dictionary"]}))
     dictionary.close()
+    print("Wrote the dictionary file")
 
     # Creates the commands, which will register the objectives
-    fin_create_commands = create_commands(mined) + create_commands(used) + create_commands(crafted) + create_commands(broken) + create_commands(dropped) + create_commands(picked_up) + create_commands(killed) + create_commands(killed_by) + create_commands(custom)
-    fin_delete_commands = delete_commands(mined) + delete_commands(used) + delete_commands(crafted) + delete_commands(broken) + delete_commands(dropped) + delete_commands(picked_up) + delete_commands(killed) + delete_commands(killed_by) + delete_commands(custom)
+    fin_create_commands = create_commands(mined) + create_commands(used) + create_commands(crafted) + create_commands(
+        broken) + create_commands(dropped) + create_commands(picked_up) + create_commands(killed) + create_commands(
+        killed_by) + create_commands(custom)
+    fin_delete_commands = delete_commands(mined) + delete_commands(used) + delete_commands(crafted) + delete_commands(
+        broken) + delete_commands(dropped) + delete_commands(picked_up) + delete_commands(killed) + delete_commands(
+        killed_by) + delete_commands(custom)
 
     # Writes to a file
     create_mcfunction = open(
@@ -69,6 +79,7 @@ def main():
         "w+")
     create_mcfunction.write("\n".join(fin_create_commands))
     create_mcfunction.close()
+    print("Wrote the create.mcfunction file")
 
     # Writes the remove commands
     delete_mcfunction = open(
@@ -76,6 +87,9 @@ def main():
         "w+")
     delete_mcfunction.write("\n".join(fin_delete_commands))
     delete_mcfunction.close()
+    print("Wrote the delete.mcfunction file")
+
+    print("Wrote the datapack")
 
 
 def make(registry, prefix, criterion_namespace, lang):
@@ -87,7 +101,7 @@ def make(registry, prefix, criterion_namespace, lang):
         truncated_name = full_name
         if len(full_name) > 16:
             index = "+" + gen_id(full_name)
-            truncated_name = full_name[:16-len(index)] + index
+            truncated_name = full_name[:16 - len(index)] + index
 
         dictionary[full_name] = truncated_name
         criteria[full_name] = criterion_namespace + ":" + "minecraft." + registry[i]["name"]
@@ -106,7 +120,7 @@ def create_commands(data):
         commands.append("scoreboard objectives add " +
                         data["dictionary"][i] + " " +
                         data["criteria"][i] + " " +
-                        "\"" +  data["display_names"][i] + "\"")
+                        "\"" + data["display_names"][i] + "\"")
 
     return commands
 
