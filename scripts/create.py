@@ -114,7 +114,7 @@ def delete_commands(data):
 def gen_id(string):
     sum = 0
     for i in string:
-        sum = sum + (ord(i) & 0xF)
+        sum = (sum + (ord(i) & 0xF)) ^ (ord(i) * 5)
     return str(sum)
 
 
