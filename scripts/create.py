@@ -11,6 +11,8 @@ pack = """{
 }
 """
 
+custom_version = "1.16+"
+
 import argparse
 import minecraft_data
 import json
@@ -19,13 +21,18 @@ import os
 # Arguments
 parser = argparse.ArgumentParser(description=description)
 parser.add_argument("-mc", "--mcversion", help="set the Minecraft version the scoreboards will be for")
+parser.add_argument("-c", "--custom", help="add the 'custom' objectives, from the latest version of the game", action="store_true")
 args = parser.parse_args()
 
 
 def main():
+    if args.custom:
+        print("\033[91mWARNING! The --custom flag is made for the %s version(s).\nIt will not work without modifying the generated mcfunction files!\033[0m" % custom_version)
+
     minecraft_version = args.mcversion
     # noinspection PyCallingNonCallable
     data = minecraft_data(minecraft_version)
+    custom_stats = json.loads(open("./scripts/assets/custom_stats.json", "r").read()) if args.custom else {}
 
     # Creates the objective names from the registries
     mined = make(data.blocks, "m", "minecraft.mined", "%s Mined")
@@ -36,6 +43,7 @@ def main():
     picked_up = make(data.items, "p", "minecraft.picked_up", "%s Picked up")
     killed = make(data.mobs, "k", "minecraft.killed", "%s Killed")
     killed_by = make(data.mobs, "kb", "minecraft.killed_by", "Killed by %s")
+    custom = make(custom_stats, "z", "minecraft.custom", "%s")
 
     # Creates the required folders
     os.makedirs("./dictionary/", exist_ok=True)
@@ -52,8 +60,8 @@ def main():
     dictionary.close()
 
     # Creates the commands, which will register the objectives
-    fin_create_commands = create_commands(mined) + create_commands(used) + create_commands(crafted) + create_commands(broken) + create_commands(dropped) + create_commands(picked_up) + create_commands(killed) + create_commands(killed_by)
-    fin_delete_commands = delete_commands(mined) + delete_commands(used) + delete_commands(crafted) + delete_commands(broken) + delete_commands(dropped) + delete_commands(picked_up) + delete_commands(killed) + delete_commands(killed_by)
+    fin_create_commands = create_commands(mined) + create_commands(used) + create_commands(crafted) + create_commands(broken) + create_commands(dropped) + create_commands(picked_up) + create_commands(killed) + create_commands(killed_by) + create_commands(custom)
+    fin_delete_commands = delete_commands(mined) + delete_commands(used) + delete_commands(crafted) + delete_commands(broken) + delete_commands(dropped) + delete_commands(picked_up) + delete_commands(killed) + delete_commands(killed_by) + delete_commands(custom)
 
     # Writes to a file
     create_mcfunction = open(
