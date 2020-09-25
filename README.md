@@ -51,7 +51,7 @@ And here you're all set! If you wish to get rid of all of these objectives, run:
 /function every-scoreboard:delete
 ```
 
-See the naming convention over [here](). 
+See the naming convention over [here](https://github.com/samipourquoi/every-scoreboard/tags). 
 
 Note that the scoreboard names won't change between versions of the game.
 That means you can have your world in 1.15.2 with that datapack, then updates your world to 1.16.2, run the datapack
