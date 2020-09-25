@@ -30,6 +30,7 @@ def main():
     # Creates the objective names from the registries
     mined = make(data.blocks, "m", "minecraft.mined", "%s Mined")
     used = make(data.items, "u", "minecraft.used", "%s Used")
+    crafted = make(data.items, "c", "minecraft.crafted", "%s Crafted")
     broken = make(data.items, "b", "minecraft.broken", "%s Broken")
     dropped = make(data.items, "d", "minecraft.dropped", "%s Dropped")
     picked_up = make(data.items, "p", "minecraft.picked_up", "%s Picked up")
@@ -51,8 +52,8 @@ def main():
     dictionary.close()
 
     # Creates the commands, which will register the objectives
-    fin_create_commands = create_commands(mined) + create_commands(used) + create_commands(broken) + create_commands(dropped) + create_commands(picked_up) + create_commands(killed) + create_commands(killed_by)
-    fin_delete_commands = delete_commands(mined) + delete_commands(used) + delete_commands(broken) + delete_commands(dropped) + delete_commands(picked_up) + delete_commands(killed) + delete_commands(killed_by)
+    fin_create_commands = create_commands(mined) + create_commands(used) + create_commands(crafted) + create_commands(broken) + create_commands(dropped) + create_commands(picked_up) + create_commands(killed) + create_commands(killed_by)
+    fin_delete_commands = delete_commands(mined) + delete_commands(used) + delete_commands(crafted) + delete_commands(broken) + delete_commands(dropped) + delete_commands(picked_up) + delete_commands(killed) + delete_commands(killed_by)
 
     # Writes to a file
     create_mcfunction = open(
