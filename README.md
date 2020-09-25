@@ -72,7 +72,7 @@ The scoreboards are name accordingly:
 
 ### ⚠️ Important note ⚠️
 
-Scoreboards name can't be longed than 16 characters! To solve that issue, the program truncates the names which are too
+Scoreboards name can't be longer than 16 characters! To solve that issue, the program truncates the names which are too
 long, and replace their end with a series of number. 
 
 If you wish to create your own tool solving that issue, you can find
