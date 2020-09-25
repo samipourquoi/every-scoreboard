@@ -48,7 +48,7 @@ def main():
     custom = make(custom_stats, "z", "minecraft.custom", "%s")
 
     # Creates the required folders
-    os.makedirs("./dictionary/", exist_ok=True)
+    os.makedirs("./dictionaries/", exist_ok=True)
     os.makedirs("./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/",
                 exist_ok=True)
 
@@ -58,7 +58,7 @@ def main():
     pack_mcmeta.close()
 
     # Creates the json file
-    dictionary = open("./dictionary/dictionnary-" + minecraft_version + ".json", "w+")
+    dictionary = open("./dictionaries/dictionnary-" + minecraft_version + ".json", "w+")
     dictionary.write(json.dumps({**mined["dictionary"], **used["dictionary"], **crafted["dictionary"],
                                  **broken["dictionary"], **dropped["dictionary"], **picked_up["dictionary"],
                                  **killed["dictionary"], **killed_by["dictionary"], **custom["dictionary"]}))
