@@ -129,11 +129,36 @@ def main():
 
 def stats_to_commands(stats, prefix, dictionary):
 	commands = []
+	dig = 0
+	picks = 0
+	shovels = 0
+	axes = 0
 	for i in stats:
 		try:
+			# Custom dig scoreboards
+			if prefix == "m-":
+				dig += stats[i]
+			if prefix == "u-":
+				if "pickaxe" in i[10:]:
+					picks += stats[i]
+				if "shovel" in i[10:]:
+					shovels += stats[i]
+				if "_axe" in i[10:]:
+					axes += stats[i]
+
 			commands.append("scoreboard players set %s " + dictionary[prefix + i[10:]] + " " + str(stats[i]))
 		except:
 			()
+
+	# Custom dig scoreboards
+	if prefix == "m-" and args.dig != None:
+		commands.append("scoreboard players set %s " + args.dig + " " + str(dig))
+	if prefix == "u-" and args.picks != None:
+		commands.append("scoreboard players set %s " + args.picks + " " + str(picks))
+	if prefix == "u-" and args.shovels != None:
+		commands.append("scoreboard players set %s " + args.shovels + " " + str(shovels))
+	if prefix == "u-" and args.axes != None:
+		commands.append("scoreboard players set %s " + args.axes + " " + str(axes))
 
 	return commands
 
