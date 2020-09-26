@@ -84,8 +84,6 @@ def main():
 		                              dictionary)
 		custom = stats_to_commands(stats["minecraft:custom"] if "minecraft:custom" in stats else {}, "z-", dictionary)
 
-		# TODO: Add digs objectives
-
 		# Random check to see if it's a fake player or not
 		if len(mined) < 10:
 			continue
