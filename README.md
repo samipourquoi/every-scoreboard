@@ -1,6 +1,6 @@
 # Every Scoreboard
 
-A tool to create datapacks which will include all the scoreboard objectives available in Minecraft. 
+A tool to generate all the scoreboard objectives available in Minecraft. 
 All of them, for ~~any~~ most versions.
 
 # How to use
@@ -72,7 +72,7 @@ The scoreboards are name accordingly:
 
 ### ⚠️ Important note ⚠️
 
-Scoreboards name can't be longed than 16 characters! To solve that issue, the program truncates the names which are too
+Scoreboards name can't be longer than 16 characters! To solve that issue, the program truncates the names which are too
 long, and replace their end with a series of number. 
 
 If you wish to create your own tool solving that issue, you can find
