@@ -3,6 +3,8 @@
 A tool to generate all the scoreboard objectives available in Minecraft. 
 All of them, for ~~any~~ most versions.
 
+It works by generating a datapack which will create the scoreboards for you.
+
 # How to use
 
 You can find 'pre-made' datapacks over [here](https://github.com/samipourquoi/every-scoreboard/tags).
@@ -102,7 +104,8 @@ There are 4 __optional__ tags. If you have a custom scoreboard made for dig's, y
 - `--shovels="<name>"` sets the name of all type shovel uses 
 - `--axes="<name>"` sets the name of all type axe uses
 
-The program will generate a datapack at `datapacks/every-scoreboard-<version>`. Drag it to your world's datapacks folder,
+The program will generate a datapack at `datapacks/every-scoreboard-<version>`. Make sure you have a backup of your
+world *just in case* something goes wrong. Drag it to your world's datapacks folder,
 and enter these commands:
 ```
 /reload
@@ -110,6 +113,6 @@ and enter these commands:
 ```
 
 # Credits
-Contact me on Discord `samipourquoi#9267` or via the Endtech discord: https://discord.gg/t7UwaDc.
+Contact me on Discord `samipourquoi#9267` or via the EndTech discord: https://discord.gg/t7UwaDc.
 
-Feel free to create an issue if you need any help 😀
+Feel free to contact me if you need any help 😀
