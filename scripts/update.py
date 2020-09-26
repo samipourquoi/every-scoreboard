@@ -11,6 +11,12 @@ pack = """{
 }
 """
 
+tag_text = """{
+	"values": [
+		%s
+	]
+}"""
+
 import argparse
 import requests
 import json
@@ -35,6 +41,8 @@ def main():
 
 	# Create required files/folders
 	os.makedirs("./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/",
+	            exist_ok=True)
+	os.makedirs("./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/tags/functions",
 	            exist_ok=True)
 	# Creates the pack.mcmeta file
 	pack_mcmeta = open("./datapacks/every-scoreboard-" + minecraft_version + "/pack.mcmeta", "w+")
@@ -83,22 +91,40 @@ def main():
 			continue
 
 		username = get_username(uuid[:36])
-		commands += str.join("\n",
-		                     mined + used + crafted + broken + picked_up + dropped + killed + killed_by + custom).replace(
-			"%s", username) + "\n"
+		commands += str.join("\n",mined + used + crafted + broken + picked_up + dropped + killed + killed_by + custom).replace("%s", username) + "\n"
 
 		# Prints
 		sys.stdout.write(
 			"\r" + "Updating " + username + "'s scores...\n\r" + str(done) + "/" + str(len(files)) + " done")
 		sys.stdout.flush()
 
-	# TODO: Split into multiple files if number of lines > 65536
+	# It's messy code but it works ig
+	i = 0
+	commands = commands.split("\n")
+	function_names = []
+	has_ran_once = True
+	max_length = 10000 #65536
+	while has_ran_once or len(commands) > 0:
+		update_mcfunction = open(
+			"./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/update" + str(i) + ".mcfunction",
+			"w+")
+		update_mcfunction.write(str.join("\n", commands[:max_length]))
+		update_mcfunction.close()
+		function_names.append("\"every-scoreboard:update" + str(i) + "\"")
+		i += 1
+		commands = commands[max_length:]
 
-	update_mcfunction = open(
-		"./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/update.mcfunction",
-		"w+")
-	update_mcfunction.write(commands)
-	update_mcfunction.close()
+		if has_ran_once:
+			has_ran_once = False
+
+	# Creates the tag to run all of these function files
+	tag = open(
+			"./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/tags/functions/update.json",
+			"w+")
+	tag.write(tag_text % str.join(",\n\t\t", function_names))
+	tag.close()
+
+
 
 
 def stats_to_commands(stats, prefix, dictionary):
