@@ -81,6 +81,28 @@ a JSON of key-value's (fullname to truncated name) in the generated `dictionarie
 I have programmed a linking bot between a Discord chat and a Minecraft server, with other utilities, that handles that
 issue. You can find the code over [here](https://github.com/samipourquoi/endbot) if you wish to set it up.
 
+# 'Recover' your old stats
+
+What if you have already started your world without all of these fancy scoreboards? No problem!
+You can actually take the statistics from your world and convert them to commands, which will update the
+objectives to their actual value.
+
+To do so, run the `update.py` script like so:
+```shell script
+$ python3 scripts/update.py -D="./dictionaries/dictionary-1.16.2.json" -S="path/to/stats"
+```
+
+- the `-D` flag will set the path of the dictionary (needed to convert full name scoreboards to their truncated form).
+- the `-S` flag will set the path of the stats folder. It's usually found at `.minecraft/saves/<world>/stats`, or
+`<server>/world/stats`. It should contain plenty of JSON files.
+
+The program will generate a datapack at `datapacks/every-scoreboard-<version>`. Drag it to your world's datapacks folder,
+and enter these commands:
+```
+/reload
+/function #every-scoreboard:update
+```
+
 # Credits
 Contact me on Discord `samipourquoi#9267` or via the Endtech discord: https://discord.gg/t7UwaDc.
 
