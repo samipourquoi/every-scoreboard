@@ -101,7 +101,7 @@ def main():
 	commands = commands.split("\n")
 	function_names = []
 	has_ran_once = True
-	max_length = 10000 #65536
+	max_length = 60000
 	while has_ran_once or len(commands) > 0:
 		update_mcfunction = open(
 			"./datapacks/every-scoreboard-" + minecraft_version + "/data/every-scoreboard/functions/update" + str(i) + ".mcfunction",
