@@ -72,8 +72,6 @@ def main():
 		except:
 			continue
 
-
-
 		file.close()
 
 		mined = stats_to_commands(stats["minecraft:mined"] if "minecraft:mined" in stats else {}, "m-", dictionary)
