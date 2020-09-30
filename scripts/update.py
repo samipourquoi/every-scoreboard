@@ -67,7 +67,13 @@ def main():
 			continue
 
 		file = open(location + "/" + uuid, "r")
-		stats = json.load(file)["stats"]
+		try:
+			stats = json.load(file)["stats"]
+		except:
+			continue
+
+
+
 		file.close()
 
 		mined = stats_to_commands(stats["minecraft:mined"] if "minecraft:mined" in stats else {}, "m-", dictionary)
