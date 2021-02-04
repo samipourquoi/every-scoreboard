@@ -7,6 +7,8 @@ stats/
 stats.*
 en_us.json
 
+csv/
+
 # IDE
 
 .idea/
