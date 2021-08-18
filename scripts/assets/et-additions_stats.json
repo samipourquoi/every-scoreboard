@@ -1,0 +1,786 @@
+{
+	"0": {
+		"name": "mined_wall_signs",
+		"displayName": "Wall Signs Mined"
+	},
+	"1": {
+		"name": "mined_carpets",
+		"displayName": "Carpets Mined"
+	},
+	"2": {
+		"name": "used_gold_ores",
+		"displayName": "Gold Ores Used"
+	},
+	"3": {
+		"name": "used_walls",
+		"displayName": "Walls Used"
+	},
+	"4": {
+		"name": "used_corals",
+		"displayName": "Corals Used"
+	},
+	"5": {
+		"name": "crafted_wooden_fences",
+		"displayName": "Wooden Fences Crafted"
+	},
+	"6": {
+		"name": "crafted_beds",
+		"displayName": "Beds Crafted"
+	},
+	"7": {
+		"name": "crafted_pressure_plates",
+		"displayName": "Pressure Plates Crafted"
+	},
+	"8": {
+		"name": "mined_soul_speed_blocks",
+		"displayName": "Soul Speed Blocks Mined"
+	},
+	"9": {
+		"name": "used_shulker_boxes",
+		"displayName": "Shulker Boxes Used"
+	},
+	"10": {
+		"name": "crafted_tall_flowers",
+		"displayName": "Tall Flowers Crafted"
+	},
+	"11": {
+		"name": "crafted_soul_speed_blocks",
+		"displayName": "Soul Speed Blocks Crafted"
+	},
+	"12": {
+		"name": "mined_small_flowers",
+		"displayName": "Small Flowers Mined"
+	},
+	"13": {
+		"name": "mined_wooden_trapdoors",
+		"displayName": "Wooden Trapdoors Mined"
+	},
+	"14": {
+		"name": "crafted_wall_signs",
+		"displayName": "Wall Signs Crafted"
+	},
+	"15": {
+		"name": "crafted_logs_that_burn",
+		"displayName": "Logs That Burn Crafted"
+	},
+	"16": {
+		"name": "crafted_hoglin_repellents",
+		"displayName": "Hoglin Repellents Crafted"
+	},
+	"17": {
+		"name": "crafted_ice",
+		"displayName": "Ice Crafted"
+	},
+	"18": {
+		"name": "used_crimson_stems",
+		"displayName": "Crimson Stems Used"
+	},
+	"19": {
+		"name": "mined_coral_plants",
+		"displayName": "Coral Plants Mined"
+	},
+	"20": {
+		"name": "used_planks",
+		"displayName": "Planks Used"
+	},
+	"21": {
+		"name": "crafted_coral_plants",
+		"displayName": "Coral Plants Crafted"
+	},
+	"22": {
+		"name": "crafted_fire",
+		"displayName": "Fire Crafted"
+	},
+	"23": {
+		"name": "crafted_flower_pots",
+		"displayName": "Flower Pots Crafted"
+	},
+	"24": {
+		"name": "mined_logs",
+		"displayName": "Logs Mined"
+	},
+	"25": {
+		"name": "mined_leaves",
+		"displayName": "Leaves Mined"
+	},
+	"26": {
+		"name": "mined_signs",
+		"displayName": "Signs Mined"
+	},
+	"27": {
+		"name": "used_soul_speed_blocks",
+		"displayName": "Soul Speed Blocks Used"
+	},
+	"28": {
+		"name": "used_small_flowers",
+		"displayName": "Small Flowers Used"
+	},
+	"29": {
+		"name": "mined_wart_blocks",
+		"displayName": "Wart Blocks Mined"
+	},
+	"30": {
+		"name": "used_beehives",
+		"displayName": "Beehives Used"
+	},
+	"31": {
+		"name": "used_coral_plants",
+		"displayName": "Coral Plants Used"
+	},
+	"32": {
+		"name": "used_ice",
+		"displayName": "Ice Used"
+	},
+	"33": {
+		"name": "mined_corals",
+		"displayName": "Corals Mined"
+	},
+	"34": {
+		"name": "used_beacon_base_blocks",
+		"displayName": "Beacon Base Blocks Used"
+	},
+	"35": {
+		"name": "mined_warped_stems",
+		"displayName": "Warped Stems Mined"
+	},
+	"36": {
+		"name": "mined_nylium",
+		"displayName": "Nylium Mined"
+	},
+	"37": {
+		"name": "used_wart_blocks",
+		"displayName": "Wart Blocks Used"
+	},
+	"38": {
+		"name": "crafted_mushroom_grow_block",
+		"displayName": "Mushroom Grow Blocks Crafted"
+	},
+	"39": {
+		"name": "crafted_crops",
+		"displayName": "Crops Crafted"
+	},
+	"40": {
+		"name": "crafted_leaves",
+		"displayName": "Leaves Crafted"
+	},
+	"41": {
+		"name": "crafted_acacia_logs",
+		"displayName": "Acacia Logs Crafted"
+	},
+	"42": {
+		"name": "used_doors",
+		"displayName": "Doors Used"
+	},
+	"43": {
+		"name": "crafted_nylium",
+		"displayName": "Nylium Crafted"
+	},
+	"44": {
+		"name": "crafted_campfires",
+		"displayName": "Campfires Crafted"
+	},
+	"45": {
+		"name": "used_jungle_logs",
+		"displayName": "Jungle Logs Used"
+	},
+	"46": {
+		"name": "crafted_coral_blocks",
+		"displayName": "Coral Blocks Crafted"
+	},
+	"47": {
+		"name": "used_anvil",
+		"displayName": "Anvils Used"
+	},
+	"48": {
+		"name": "crafted_carpets",
+		"displayName": "Carpets Crafted"
+	},
+	"49": {
+		"name": "crafted_trapdoors",
+		"displayName": "Trapdoors Crafted"
+	},
+	"50": {
+		"name": "crafted_wooden_pressure_plates",
+		"displayName": "Wooden Pressure Plates Crafted"
+	},
+	"51": {
+		"name": "mined_planks",
+		"displayName": "Planks Mined"
+	},
+	"52": {
+		"name": "mined_stone_pressure_plates",
+		"displayName": "Stone Pressure Plates Mined"
+	},
+	"53": {
+		"name": "used_wall_corals",
+		"displayName": "Wall Corals Used"
+	},
+	"54": {
+		"name": "used_piglin_repellents",
+		"displayName": "Piglin Repellents Used"
+	},
+	"55": {
+		"name": "mined_non_flammable_wood",
+		"displayName": "Non Flammable Wood Mined"
+	},
+	"56": {
+		"name": "mined_sand",
+		"displayName": "All Sand Mined"
+	},
+	"57": {
+		"name": "mined_wooden_buttons",
+		"displayName": "Wooden Buttons Mined"
+	},
+	"58": {
+		"name": "crafted_corals",
+		"displayName": "Corals Crafted"
+	},
+	"59": {
+		"name": "mined_trapdoors",
+		"displayName": "Trapdoors Mined"
+	},
+	"60": {
+		"name": "crafted_small_flowers",
+		"displayName": "Small Flowers Crafted"
+	},
+	"61": {
+		"name": "used_fences",
+		"displayName": "Fences Used"
+	},
+	"62": {
+		"name": "used_logs",
+		"displayName": "Logs Used"
+	},
+	"63": {
+		"name": "crafted_planks",
+		"displayName": "Planks Crafted"
+	},
+	"64": {
+		"name": "used_non_flammable_wood",
+		"displayName": "Non Flammable Wood Used"
+	},
+	"65": {
+		"name": "crafted_non_flammable_wood",
+		"displayName": "Non Flammable Wood Crafted"
+	},
+	"66": {
+		"name": "crafted_rails",
+		"displayName": "Rails Crafted"
+	},
+	"67": {
+		"name": "mined_mushroom_grow_block",
+		"displayName": "Mushroom Grow Blocks Mined"
+	},
+	"68": {
+		"name": "used_leaves",
+		"displayName": "Leaves Used"
+	},
+	"69": {
+		"name": "crafted_flowers",
+		"displayName": "Flowers Crafted"
+	},
+	"70": {
+		"name": "used_flower_pots",
+		"displayName": "Flower Pots Used"
+	},
+	"71": {
+		"name": "used_rails",
+		"displayName": "Rails Used"
+	},
+	"72": {
+		"name": "used_wooden_doors",
+		"displayName": "Wooden Doors Used"
+	},
+	"73": {
+		"name": "mined_shulker_boxes",
+		"displayName": "Shulker Boxes Mined"
+	},
+	"74": {
+		"name": "used_carpets",
+		"displayName": "Carpets Used"
+	},
+	"75": {
+		"name": "crafted_logs",
+		"displayName": "Logs Crafted"
+	},
+	"76": {
+		"name": "used_warped_stems",
+		"displayName": "Warped Stems Used"
+	},
+	"77": {
+		"name": "crafted_dark_oak_logs",
+		"displayName": "Dark Oak Logs Crafted"
+	},
+	"78": {
+		"name": "used_slabs",
+		"displayName": "Slabs Used"
+	},
+	"79": {
+		"name": "used_pressure_plates",
+		"displayName": "Pressure Plates Used"
+	},
+	"80": {
+		"name": "used_wooden_stairs",
+		"displayName": "Wooden Stairs Used"
+	},
+	"81": {
+		"name": "mined_fence_gates",
+		"displayName": "Fence Gates Mined"
+	},
+	"82": {
+		"name": "mined_wool",
+		"displayName": "Wool Mined"
+	},
+	"83": {
+		"name": "mined_pressure_plates",
+		"displayName": "Pressure Plates Mined"
+	},
+	"84": {
+		"name": "crafted_wart_blocks",
+		"displayName": "Wart Blocks Crafted"
+	},
+	"85": {
+		"name": "crafted_stairs",
+		"displayName": "Stairs Crafted"
+	},
+	"86": {
+		"name": "used_mushroom_grow_block",
+		"displayName": "Mushroom Grow Blocks Used"
+	},
+	"87": {
+		"name": "mined_ice",
+		"displayName": "Ice Mined"
+	},
+	"88": {
+		"name": "mined_beehives",
+		"displayName": "Beehives Mined"
+	},
+	"89": {
+		"name": "crafted_crimson_stems",
+		"displayName": "Crimson Stems Crafted"
+	},
+	"90": {
+		"name": "mined_campfires",
+		"displayName": "Campfires Mined"
+	},
+	"91": {
+		"name": "mined_oak_logs",
+		"displayName": "Oak Logs Mined"
+	},
+	"92": {
+		"name": "used_portals",
+		"displayName": "Portals Used"
+	},
+	"93": {
+		"name": "used_bee_growables",
+		"displayName": "Bee Growables Used"
+	},
+	"94": {
+		"name": "used_coral_blocks",
+		"displayName": "Coral Blocks Used"
+	},
+	"95": {
+		"name": "mined_saplings",
+		"displayName": "Saplings Mined"
+	},
+	"96": {
+		"name": "used_wooden_pressure_plates",
+		"displayName": "Wooden Pressure Plates Used"
+	},
+	"97": {
+		"name": "crafted_spruce_logs",
+		"displayName": "Spruce Logs Crafted"
+	},
+	"98": {
+		"name": "mined_banners",
+		"displayName": "Banners Mined"
+	},
+	"99": {
+		"name": "mined_wooden_fences",
+		"displayName": "Wooden Fences Mined"
+	},
+	"100": {
+		"name": "crafted_slabs",
+		"displayName": "Slabs Crafted"
+	},
+	"101": {
+		"name": "used_wooden_slabs",
+		"displayName": "Wooden Slabs Used"
+	},
+	"102": {
+		"name": "mined_crops",
+		"displayName": "Crops Mined"
+	},
+	"103": {
+		"name": "crafted_stone_pressure_plates",
+		"displayName": "Stone Pressure Plates Crafted"
+	},
+	"104": {
+		"name": "mined_stairs",
+		"displayName": "Stairs Mined"
+	},
+	"105": {
+		"name": "mined_rails",
+		"displayName": "Rails Mined"
+	},
+	"106": {
+		"name": "crafted_jungle_logs",
+		"displayName": "Jungle Logs Crafted"
+	},
+	"107": {
+		"name": "used_acacia_logs",
+		"displayName": "Acacia Logs Used"
+	},
+	"108": {
+		"name": "mined_coral_blocks",
+		"displayName": "Coral Blocks Mined"
+	},
+	"109": {
+		"name": "used_beds",
+		"displayName": "Beds Used"
+	},
+	"110": {
+		"name": "used_stone_bricks",
+		"displayName": "All Stone Bricks Used"
+	},
+	"111": {
+		"name": "crafted_stone_bricks",
+		"displayName": "All Stone Bricks Crafted"
+	},
+	"112": {
+		"name": "mined_jungle_logs",
+		"displayName": "Jungle Logs Mined"
+	},
+	"113": {
+		"name": "mined_wall_corals",
+		"displayName": "Wall Corals Mined"
+	},
+	"114": {
+		"name": "mined_acacia_logs",
+		"displayName": "Acacia Logs Mined"
+	},
+	"115": {
+		"name": "mined_wooden_doors",
+		"displayName": "Wooden Doors Mined"
+	},
+	"116": {
+		"name": "mined_wooden_slabs",
+		"displayName": "Wooden Slabs Mined"
+	},
+	"117": {
+		"name": "mined_flower_pots",
+		"displayName": "Flower Pots Mined"
+	},
+	"118": {
+		"name": "mined_walls",
+		"displayName": "Walls Mined"
+	},
+	"119": {
+		"name": "mined_flowers",
+		"displayName": "Flowers Mined"
+	},
+	"120": {
+		"name": "mined_buttons",
+		"displayName": "Buttons Mined"
+	},
+	"121": {
+		"name": "crafted_wooden_stairs",
+		"displayName": "Wooden Stairs Crafted"
+	},
+	"122": {
+		"name": "mined_spruce_logs",
+		"displayName": "Spruce Logs Mined"
+	},
+	"123": {
+		"name": "used_logs_that_burn",
+		"displayName": "Logs That Burn Used"
+	},
+	"124": {
+		"name": "used_dark_oak_logs",
+		"displayName": "Dark Oak Logs Used"
+	},
+	"125": {
+		"name": "mined_anvil",
+		"displayName": "Anvils Mined"
+	},
+	"126": {
+		"name": "used_fire",
+		"displayName": "Fire Used"
+	},
+	"127": {
+		"name": "crafted_wooden_trapdoors",
+		"displayName": "Wooden Trapdoors Crafted"
+	},
+	"128": {
+		"name": "crafted_walls",
+		"displayName": "Walls Crafted"
+	},
+	"129": {
+		"name": "used_crops",
+		"displayName": "Crops Used"
+	},
+	"130": {
+		"name": "crafted_beehives",
+		"displayName": "Beehives Crafted"
+	},
+	"131": {
+		"name": "crafted_gold_ores",
+		"displayName": "Gold Ores Crafted"
+	},
+	"132": {
+		"name": "crafted_fence_gates",
+		"displayName": "Fence Gates Crafted"
+	},
+	"133": {
+		"name": "used_trapdoors",
+		"displayName": "Trapdoors Used"
+	},
+	"134": {
+		"name": "mined_doors",
+		"displayName": "Doors Mined"
+	},
+	"135": {
+		"name": "used_standing_signs",
+		"displayName": "Standing Signs Used"
+	},
+	"136": {
+		"name": "crafted_doors",
+		"displayName": "Doors Crafted"
+	},
+	"137": {
+		"name": "crafted_buttons",
+		"displayName": "Buttons Crafted"
+	},
+	"138": {
+		"name": "mined_piglin_repellents",
+		"displayName": "Piglin Repellents Mined"
+	},
+	"139": {
+		"name": "used_banners",
+		"displayName": "Banners Used"
+	},
+	"140": {
+		"name": "mined_portals",
+		"displayName": "Portals Mined"
+	},
+	"141": {
+		"name": "used_buttons",
+		"displayName": "Buttons Used"
+	},
+	"142": {
+		"name": "used_spruce_logs",
+		"displayName": "Spruce Logs Used"
+	},
+	"143": {
+		"name": "crafted_anvil",
+		"displayName": "Anvils Crafted"
+	},
+	"144": {
+		"name": "mined_standing_signs",
+		"displayName": "Standing Signs Mined"
+	},
+	"145": {
+		"name": "used_wooden_buttons",
+		"displayName": "Wooden Buttons Used"
+	},
+	"146": {
+		"name": "used_oak_logs",
+		"displayName": "Oak Logs Used"
+	},
+	"147": {
+		"name": "used_saplings",
+		"displayName": "Saplings Used"
+	},
+	"148": {
+		"name": "crafted_piglin_repellents",
+		"displayName": "Piglin Repellents Crafted"
+	},
+	"149": {
+		"name": "used_flowers",
+		"displayName": "Flowers Used"
+	},
+	"150": {
+		"name": "mined_slabs",
+		"displayName": "Slabs Mined"
+	},
+	"151": {
+		"name": "mined_stone_bricks",
+		"displayName": "All Stone Bricks Mined"
+	},
+	"152": {
+		"name": "used_stone_pressure_plates",
+		"displayName": "Stone Pressure Plates Used"
+	},
+	"153": {
+		"name": "mined_dark_oak_logs",
+		"displayName": "Dark Oak Logs Mined"
+	},
+	"154": {
+		"name": "crafted_warped_stems",
+		"displayName": "Warped Stems Crafted"
+	},
+	"155": {
+		"name": "crafted_sand",
+		"displayName": "Sand Crafted"
+	},
+	"156": {
+		"name": "crafted_portals",
+		"displayName": "Portals Crafted"
+	},
+	"157": {
+		"name": "used_hoglin_repellents",
+		"displayName": "Hoglin Repellents Used"
+	},
+	"158": {
+		"name": "used_nylium",
+		"displayName": "Nylium Used"
+	},
+	"159": {
+		"name": "crafted_banners",
+		"displayName": "Banners Crafted"
+	},
+	"160": {
+		"name": "crafted_wooden_slabs",
+		"displayName": "Wooden Slabs Crafted"
+	},
+	"161": {
+		"name": "used_sand",
+		"displayName": "All Sand Used"
+	},
+	"162": {
+		"name": "mined_wooden_pressure_plates",
+		"displayName": "Wooden Pressure Plates Mined"
+	},
+	"163": {
+		"name": "crafted_wooden_doors",
+		"displayName": "Wooden Doors Crafted"
+	},
+	"164": {
+		"name": "mined_crimson_stems",
+		"displayName": "Crimson Stems Mined"
+	},
+	"165": {
+		"name": "crafted_wool",
+		"displayName": "Wool Crafted"
+	},
+	"166": {
+		"name": "used_wool",
+		"displayName": "Wool Used"
+	},
+	"167": {
+		"name": "mined_beacon_base_blocks",
+		"displayName": "Beacon Base Blocks Mined"
+	},
+	"168": {
+		"name": "mined_logs_that_burn",
+		"displayName": "Logs That Burn Mined"
+	},
+	"169": {
+		"name": "mined_fire",
+		"displayName": "Fire Mined"
+	},
+	"170": {
+		"name": "used_campfires",
+		"displayName": "Campfires Used"
+	},
+	"171": {
+		"name": "used_stairs",
+		"displayName": "Stairs Used"
+	},
+	"172": {
+		"name": "mined_gold_ores",
+		"displayName": "Gold Ores Mined"
+	},
+	"173": {
+		"name": "mined_tall_flowers",
+		"displayName": "Tall Flowers Mined"
+	},
+	"174": {
+		"name": "crafted_shulker_boxes",
+		"displayName": "Shulker Boxes Crafted"
+	},
+	"175": {
+		"name": "mined_fences",
+		"displayName": "Fences Mined"
+	},
+	"176": {
+		"name": "crafted_standing_signs",
+		"displayName": "Standing Signs Crafted"
+	},
+	"177": {
+		"name": "used_wooden_trapdoors",
+		"displayName": "Wooden Trapdoors Used"
+	},
+	"178": {
+		"name": "crafted_birch_logs",
+		"displayName": "Birch Logs Crafted"
+	},
+	"179": {
+		"name": "crafted_beacon_base_blocks",
+		"displayName": "Beacon Base Blocks Crafted"
+	},
+	"180": {
+		"name": "crafted_signs",
+		"displayName": "Signs Crafted"
+	},
+	"181": {
+		"name": "crafted_saplings",
+		"displayName": "Saplings Crafted"
+	},
+	"182": {
+		"name": "used_fence_gates",
+		"displayName": "Fence Gates Used"
+	},
+	"183": {
+		"name": "used_tall_flowers",
+		"displayName": "Tall Flowers Used"
+	},
+	"184": {
+		"name": "mined_birch_logs",
+		"displayName": "Birch Logs Mined"
+	},
+	"185": {
+		"name": "used_wall_signs",
+		"displayName": "Wall Signs Used"
+	},
+	"186": {
+		"name": "crafted_oak_logs",
+		"displayName": "Oak Logs Crafted"
+	},
+	"187": {
+		"name": "mined_beds",
+		"displayName": "Beds Mined"
+	},
+	"188": {
+		"name": "used_birch_logs",
+		"displayName": "Birch Logs Used"
+	},
+	"189": {
+		"name": "used_signs",
+		"displayName": "Signs Used"
+	},
+	"190": {
+		"name": "crafted_fences",
+		"displayName": "Fences Crafted"
+	},
+	"191": {
+		"name": "crafted_wooden_buttons",
+		"displayName": "Wooden Buttons Crafted"
+	},
+	"192": {
+		"name": "mined_wooden_stairs",
+		"displayName": "Wooden Stairs Mined"
+	},
+	"193": {
+		"name": "mined_hoglin_repellents",
+		"displayName": "Hoglin Repellents Mined"
+	},
+	"194": {
+		"name": "crafted_wall_corals",
+		"displayName": "Wall Corlas Crafted"
+	},
+	"195": {
+		"name": "used_wooden_fences",
+		"displayName": "Wooden Fences Used"
+	}
+}
