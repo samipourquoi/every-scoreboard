@@ -37,6 +37,10 @@ to the datapack. Be careful however! It is made for the latest version(s) of the
 You will probably need to modify the resulting `mcfunction` files at the end if you
 do it for an older version of Minecraft.
 
+The `-eta` flag will add all the block tag objectives from the [EndTech Additions Mod](https://github.com/samipourquoi/endtech-additions)
+as well as the [custom objectives](https://minecraft.gamepedia.com/Statistics#List_of_custom_statistic_names). You need EndTech Additions
+running on your server for these objectives to work.
+
 The resulting files will end up at `datapacks/every-scoreboard-<version>` and `dictionaries/dictionary-<version>.json`.
 We will come back to the second file later on.
 
