@@ -29,7 +29,7 @@ args = parser.parse_args()
 
 
 def main():
-	if args.custom:
+	if args.custom or args.endtechAdditions:
 		print(
 			"\033[91mWARNING! The --custom flag is made for the %s version(s).\nIt will not work without modifying the generated mcfunction files!\033[0m" % custom_version)
 	if args.endtechAdditions:
