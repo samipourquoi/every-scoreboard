@@ -179,26 +179,18 @@ def stats_to_commands(stats, prefix, dictionary):
 	if prefix == "u-" and args.axes != None:
 		commands.append("scoreboard players set %s " + args.axes + " " + str(axes))
 
-	if prefix == "u-":
-		for tag in block_tag_stats:
-			objective = dictionary.get("z-used_" + tag)
-
-			if objective != None:
-				commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
-
-	if prefix == "m-":
-		for tag in block_tag_stats:
+	for tag in block_tag_stats:
+		if prefix == "m-":
 			objective = dictionary.get("z-mined_" + tag)
-
-			if objective != None:
-				commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
-
-	if prefix == "c-":
-		for tag in block_tag_stats:
+		elif prefix == "u-":
+			objective = dictionary.get("z-used_" + tag)
+		elif prefix == "c-":
 			objective = dictionary.get("z-crafted_" + tag)
+		else:
+			continue
 
-			if objective != None:
-				commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
+		if objective != None:
+			commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
 
 	return commands
 
