@@ -30,8 +30,7 @@ parser.add_argument("-S", "--statslocation", help="set the path from where the p
 parser.add_argument("-D", "--dictionary", help="set the path from where the program will get the objectives dictionary")
 parser.add_argument("-d", "--dig", required=False, help="(optional) set the name of the total dig objective")
 parser.add_argument("-p", "--picks", required=False, help="(optional) set the name of the total pick uses objective")
-parser.add_argument("-s", "--shovels", required=False,
-                    help="(optional) set the name of the total shovel uses objective")
+parser.add_argument("-s", "--shovels", required=False, help="(optional) set the name of the total shovel uses objective")
 parser.add_argument("-a", "--axes", required=False, help="(optional) set the name of the axe uses objective")
 args = parser.parse_args()
 
@@ -130,6 +129,8 @@ def main():
 
 
 def stats_to_commands(stats, prefix, dictionary):
+	block_tags = json.loads(open("./scripts/assets/block_tags.json", "r").read())
+	block_tag_stats = {}
 	commands = []
 	dig = 0
 	picks = 0
@@ -137,22 +138,38 @@ def stats_to_commands(stats, prefix, dictionary):
 	axes = 0
 	for i in stats:
 		try:
-			# Custom dig scoreboards
-			if prefix == "m-":
-				dig += stats[i]
-			if prefix == "u-":
-				if "pickaxe" in i[10:]:
-					picks += stats[i]
-				if "shovel" in i[10:]:
-					shovels += stats[i]
-				if "_axe" in i[10:]:
-					axes += stats[i]
+			stat = i[10:]
+			score = stats[i]
 
-			commands.append("scoreboard players set %s " + dictionary[prefix + i[10:]] + " " + str(stats[i]))
+			# Custom dig and block tag scoreboards
+			if prefix == "m-":
+				update_block_tag_stats(block_tags, block_tag_stats, stat, score)
+				dig += score
+
+			if prefix == "u-":
+				update_block_tag_stats(block_tags, block_tag_stats, stat, score)
+
+				if "pickaxe" in stat:
+					picks += score
+				if "shovel" in stat:
+					shovels += score
+				if "_axe" in stat:
+					axes += score
+			
+			if prefix == "c-":
+				update_block_tag_stats(block_tags, block_tag_stats, stat, score)
+
+			if prefix == "z-":
+				block_tag = stat.split("_", 1)[-1]
+				
+				if block_tag in block_tags:
+					continue
+
+			commands.append("scoreboard players set %s " + dictionary[prefix + stat] + " " + str(score))
 		except:
 			()
 
-	# Custom dig scoreboards
+	# Custom dig and block tag scoreboards
 	if prefix == "m-" and args.dig != None:
 		commands.append("scoreboard players set %s " + args.dig + " " + str(dig))
 	if prefix == "u-" and args.picks != None:
@@ -162,8 +179,36 @@ def stats_to_commands(stats, prefix, dictionary):
 	if prefix == "u-" and args.axes != None:
 		commands.append("scoreboard players set %s " + args.axes + " " + str(axes))
 
+	if prefix == "u-":
+		for tag in block_tag_stats:
+			objective = dictionary.get("z-used_" + tag)
+
+			if objective != None:
+				commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
+
+	if prefix == "m-":
+		for tag in block_tag_stats:
+			objective = dictionary.get("z-mined_" + tag)
+
+			if objective != None:
+				commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
+
+	if prefix == "c-":
+		for tag in block_tag_stats:
+			objective = dictionary.get("z-crafted_" + tag)
+
+			if objective != None:
+				commands.append("scoreboard players set %s " + str(objective) + " " + str(block_tag_stats[tag]))
+
 	return commands
 
+def update_block_tag_stats(block_tags, block_tag_stats, stat, score):
+	for tag in block_tags:
+		if stat in block_tags[tag]:
+			if tag in block_tag_stats:
+				block_tag_stats[tag] += score
+			else:
+				block_tag_stats[tag] = score
 
 def get_username(uuid):
 	# Removes the '-'
