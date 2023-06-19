@@ -1,3 +1,6 @@
+I am not maintaining this project anymore.
+See [@cohenrickson](https://github.com/cohenerickson)'s repo [here](https://github.com/cohenerickson/Every-Scoreboard) (1.17-1.20 as I'm writing) or [@Synthro42](https://github.com/Syntro42)'s fork [here](https://github.com/Syntro42/every-scoreboard) (1.19 as I'm writing).
+
 # Every Scoreboard
 
 A tool to generate all the scoreboard objectives available in Minecraft. 
